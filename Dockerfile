@@ -1,6 +1,6 @@
 FROM frolvlad/alpine-glibc
 
-RUN apk update && apk add libaio libnsl gcompat
+RUN apk update && apk add libaio libnsl
 
 COPY instantclient_12_1.zip ./
 RUN unzip instantclient_12_1.zip && \
