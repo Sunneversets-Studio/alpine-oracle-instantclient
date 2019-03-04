@@ -17,6 +17,6 @@ RUN apt-get update && \
     ln -s /usr/lib/libnsl.so.2.0.0 /usr/lib/libnsl.so.1
 
 ENV ORACLE_BASE /usr/lib/instantclient_12_1
-ENV LD_LIBRARY_PATH lib:/usr/lib/instantclient_12_1
+ENV LD_LIBRARY_PATH /usr/lib/instantclient_12_1
 ENV TNS_ADMIN /usr/lib/instantclient_12_1
 ENV ORACLE_HOME /usr/lib/instantclient_12_1
